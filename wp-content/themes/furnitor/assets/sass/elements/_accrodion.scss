@@ -1,0 +1,30 @@
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.vc_tta-accordion {
+	.vc_tta-panel-title {
+		font-size: 16px;
+	}
+	&.custom-accordion-underline{
+		&.vc_tta-style-underline{
+			.vc_tta-panel-heading{
+				border-width: 0 0 1px 0;
+				border-style: solid;
+				border-color: var(--g5-color-border);
+				@include border-radius(0);
+			}
+			.vc_active .vc_tta-panel-heading{
+				border-color: var(--g5-color-heading);
+			}
+			.vc_tta-panel-body{
+				padding: 14px 0 22px;
+			}
+			.vc_tta-controls-icon-position-right.vc_tta-panel-title > a{
+				padding: 26px 26px 20px 0;
+			}
+			.vc_tta-controls-icon-position-left.vc_tta-panel-title > a{
+				padding: 26px 0 20px 26px;
+				i{
+					margin-top: 3px;
+				}
+			}
+		}
+	}
+}

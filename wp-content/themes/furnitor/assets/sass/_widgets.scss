@@ -1,0 +1,168 @@
+.primary-sidebar {
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.widget {
+	position: relative;
+	margin-bottom: 65px;
+	@extend %clearfix;
+
+	.screen-reader-text {
+		display: none;
+	}
+
+	.widget-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.widget_search {
+	@include widget-search();
+}
+
+.widget_archive,
+.widget_categories,
+.widget_product_categories {
+	select {
+		width: 100%;
+	}
+}
+
+
+.widget_archive ul,
+.widget_categories ul,
+.widget_nav_menu ul,
+.widget_pages ul {
+	@include widget-archive();
+}
+
+.widget_archive,
+.widget_categories ul {
+	span.count {
+		position: absolute;
+		top: 2px;
+		right: 0;
+	}
+
+	a:hover + .count {
+		color: var(--g5-color-accent);
+	}
+}
+
+.widget_pages ul {
+	.current_page_item {
+		> a {
+			color: var(--g5-color-accent);
+		}
+	}
+}
+
+.widget_nav_menu ul {
+	.current-menu-item {
+		> a {
+			color: var(--g5-color-accent);
+		}
+	}
+}
+
+
+.widget_rss ul,
+.widget_recent_entries ul,
+.widget_recent_comments ul,
+.widget_meta ul {
+	@include widget-meta();
+}
+
+.widget_recent_comments ul {
+	a {
+		border-color: currentColor;
+	}
+	li {
+		line-height: 25px;
+	}
+}
+
+.widget_rss {
+	a.rsswidget .rss-widget-icon {
+		display: none;
+	}
+	ul {
+		li {
+			line-height: 25px;
+		}
+		a {
+			border-color: currentColor;
+		}
+	}
+}
+
+.widget.widget_tag_cloud {
+	margin-bottom: 56px;
+}
+
+.tagcloud {
+	@include widget-tag();
+}
+
+.zoom-instagram-widget {
+	.widget-title {
+		margin-bottom: 27px;
+	}
+}
+
+.zoom-instagram-widget__item {
+	margin-left: 0;
+}
+
+.g5blog__widget-post {
+	.widget-title {
+		margin-bottom: 30px;
+	}
+
+	.g5blog__widget-post-list .g5blog__post-widget {
+		margin-bottom: 34px;
+	}
+}
+
+.widget_calendar {
+	caption {
+		caption-side: top;
+		padding: 0.5rem 1rem;
+		background-color: #f2f2f2;
+		border: solid 1px;
+		border-color: var(--g5-color-border);
+		text-transform: uppercase;
+		font-size: 14px;
+		color: var(--g5-color-heading);
+		font-weight: 600;
+		text-align: center;
+	}
+
+	td, th {
+		padding: 0.3rem;
+	}
+
+	thead, tbody {
+		td, th {
+			text-align: center;
+			border-width: 1px;
+		}
+	}
+
+	tfoot {
+		td, th {
+			border: none;
+		}
+
+		#next {
+			text-align: right;
+		}
+	}
+}
+
+.wpb_widgetised_column .widget {
+	margin-bottom: 0;
+}

@@ -1,0 +1,18 @@
+.g5blog__single-related-wrap {
+  margin-top: 100px;
+}
+
+body.no-sidebar {
+  .g5blog__single-related-wrap {
+    margin-left: -($container_width - ($content_width + $grid_gutter_width)) / 2;
+    margin-right: -($container_width - ($content_width + $grid_gutter_width )) / 2;
+  }
+
+  @include media-md() {
+    .g5blog__single-related-wrap {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+.g5shop__product-list-actions {
+  a.button.button {
+    @include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+  }
+  .g5shop__quick-view {
+    border: 1px solid currentColor;
+    color: var(--g5-color-heading);
+    background-color: transparent;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--g5-color-heading);
+      border-color: var(--g5-color-heading);
+      color: #fff;
+    }
+  }
+
+  .yith-wcwl-add-to-wishlist {
+    a {
+      border: 1px solid currentColor;
+      color: var(--g5-color-heading);
+      background-color: transparent;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--g5-color-heading);
+        border-color: var(--g5-color-heading);
+        color: #fff;
+      }
+    }
+  }
+
+  .compare {
+    border: 1px solid currentColor;
+    color: var(--g5-color-heading);
+    background-color: transparent;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--g5-color-heading);
+      border-color: var(--g5-color-heading);
+      color: #fff;
+    }
+  }
+}
+

@@ -1,0 +1,45 @@
+.woocommerce ul.product_list_widget:not(.cart_list) {
+  li {
+    padding: 0;
+    img {
+      float: left;
+      width: 80px;
+      margin: 0 10px 0 0;
+    }
+    a {
+      margin-bottom: 5px;
+      color: var(--g5-color-heading);
+      font-weight: 700;
+      &:hover {
+        color: var(--g5-color-accent);
+      }
+    }
+
+    span.amount {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--g5-color-heading);
+    }
+
+    ins {
+      background: transparent;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    del {
+      span.amount {
+        margin-right: 5px;
+      }
+    }
+
+    .star-rating {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    + li {
+      margin-top: 20px;
+    }
+  }
+}

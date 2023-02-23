@@ -1,0 +1,46 @@
+.g5core-menu-mobile .main-menu .menu-item>a {
+	font-size: var(--g5-font-size-menu-mobile);
+	text-transform: none;
+}
+
+.g5core-mobile-header,
+.custom-search-button-hidden{
+	.g5core-search-button{
+		span{
+			display: none;
+		}
+	}
+}
+
+
+.g5core-menu-mobile {
+	.main-menu {
+		.menu-item>a {
+			font-size: var(--g5-font-size-menu-mobile);
+			text-transform: none;
+		}
+		.x-mega-sub-menu {
+			.ube-heading-title,
+			.gel-heading-title {
+				font-size: var(--g5-font-size-menu-mobile);
+			}
+
+			.ube-list-icon .list-icon-item,
+			.gel-list .gel-list-item {
+				font-size: var(--g5-font-size-menu-mobile);
+			}
+		}
+	}
+
+	.g5core-search-form {
+		input[type=search] {
+			padding: 0 2rem 0 1rem;
+
+		}
+		button {
+			padding: 0 1rem;
+		}
+	}
+}
+
+

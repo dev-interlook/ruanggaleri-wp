@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+	.custom-ube-slider-01 {
+		.ube-slider {
+			width: 91vw !important;
+		}
+
+		.slick-arrow.slick-prev {
+			left: -40px;
+		}
+
+		.slick-arrows {
+			position: absolute;
+			left: -20%;
+			bottom: 22%;
+		}
+	}
+}
+
+@media (min-width: 1800px) {
+	.custom-ube-slider-01 .slick-arrows {
+		left: -380px;
+	}
+}
+
+.slider-space-bt-item-25 .slick-slide > div {
+	padding-bottom: 25px !important;
+}

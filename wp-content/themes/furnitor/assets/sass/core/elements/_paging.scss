@@ -1,0 +1,15 @@
+.g5core__paging {
+  &.next-prev {
+    > a {
+      width: $height__input;
+      height: $height__input;
+      line-height: $height__input;
+      border-color: var(--g5-color-border);
+      &:not(.disable):hover {
+        background-color: var(--g5-color-accent);
+        color: var(--g5-color-accent-foreground);
+        border-color: var(--g5-color-accent);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.gel-list .gel-list-item a {
+	border-bottom: solid 1px transparent;
+	@include transition(all 0.3s);
+
+	&:hover {
+		border-color: currentColor;
+	}
+}
+
+.list-md .item-list:not(:last-child) {
+	padding-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+	.list-md-style-01 .item-list {
+		@include flex-flow-row(important);
+	}
+}
+
+@media (max-width: 767px) {
+	.list-sm-style-01 .item-list {
+		@include flex-flow-row(important);
+	}
+}

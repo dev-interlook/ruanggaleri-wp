@@ -1,0 +1,28 @@
+@import "form";
+@import "order-review";
+@import "login";
+@import "order-received";
+
+
+#customer_details {
+	.col-1,
+	.col-2 {
+		width: 100%;
+	}
+
+	margin-bottom: 40px;
+}
+
+
+@media (min-width: 992px) {
+	#customer_details {
+		float: left;
+		width: 50%;
+		margin-bottom: 0;
+	}
+
+	#order_review_wrapper {
+		float: right;
+		width: 41.666667%;
+	}
+}

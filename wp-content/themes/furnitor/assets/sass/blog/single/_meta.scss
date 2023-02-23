@@ -1,0 +1,12 @@
+.g5blog__single-meta-tag.tagcloud {
+	a {
+		margin-right: 5px;
+		&:after {
+			display: inline-block;
+			content: ',';
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+}

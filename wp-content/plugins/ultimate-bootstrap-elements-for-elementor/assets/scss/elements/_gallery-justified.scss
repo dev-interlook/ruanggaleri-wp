@@ -1,0 +1,18 @@
+.ube-gallery-justified {
+	.ube-gallery-item {
+		overflow: visible;
+		padding: 0;
+	}
+
+	.card-img {
+		border-radius: 0;
+	}
+
+	.jg-entry:not(.jg-entry-visible) {
+		z-index: -1;
+
+		img {
+			opacity: 0;
+		}
+	}
+}

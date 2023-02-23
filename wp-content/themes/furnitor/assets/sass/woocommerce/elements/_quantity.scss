@@ -1,0 +1,26 @@
+.woocommerce .quantity .qty {
+	width: 130px;
+	padding: 0;
+	background: transparent;
+	border: 1px solid;
+	border-color: var(--g5-color-border);
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+
+.g5shop__quantity {
+	label {
+		color: var(--g5-color-heading);
+	}
+	input {
+		background-color: transparent;
+		color: var(--g5-color-heading);
+	}
+	.g5shop__quantity-inner {
+		width: 130px;
+	}
+}

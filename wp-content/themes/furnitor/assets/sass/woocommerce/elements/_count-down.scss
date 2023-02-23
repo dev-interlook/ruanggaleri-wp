@@ -1,0 +1,32 @@
+.g5shop__countdown-section {
+  width: 85px;
+  height: 85px;
+  background-color: transparent;
+  color: var(--g5-color-heading);
+  @include border-radius(0);
+  border: 1px solid var(--g5-color-border);
+
+
+  .countdown-amount {
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  .countdown-period {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.55px;
+    margin-top: 5px;
+  }
+
+  +.g5shop__countdown-section {
+    margin-left: 10px;
+  }
+}
+
+.g5shop__deal-heading {
+  color: var(--g5-color-heading);
+  font-size: 16px;
+  text-transform: none;
+  margin-bottom: 8px;
+}

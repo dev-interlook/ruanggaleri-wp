@@ -1,0 +1,28 @@
+.woocommerce div.product div.images {
+	margin-bottom: 100px;
+	.flex-control-thumbs {
+		li {
+			img {
+				border: 1px solid transparent;
+				@include transition(all .3s);
+				&.flex-active,
+				&:hover {
+					opacity: 1;
+					border-color: #000;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.woocommerce div.product div.images {
+		margin-bottom: 60px;
+	}
+}
+
+.g5shop__single-product-images {
+	position: relative;
+}
+
+

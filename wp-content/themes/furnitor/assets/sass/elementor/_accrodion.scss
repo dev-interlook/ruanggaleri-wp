@@ -1,0 +1,31 @@
+
+.ube-accordion{
+	.ube-accordion-icon{
+		font-size: 12px;
+	}
+	.card-header{
+		.ube-accordion-link{
+			color: var(--g5-color-heading);
+		}
+	}
+}
+
+.custom-ube-accordion-01{
+	.card-header{
+		padding: 1rem 0;
+		border-color: var(--g5-color-border);
+		margin-bottom: 0 !important;
+	}
+	.card-body{
+		padding: 20px 0 9px;
+	}
+	.card{
+		border: 0;
+		&:not(.ube-accordion-separate):last-child:not(.active) .card-header{
+			border-bottom-color: var(--g5-color-border);
+		}
+		&.active .card-header{
+			border-color: var(--g5-color-heading);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.g5shop__filter-button {
+  color: var(--g5-color-heading);
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--g5-color-accent);
+  }
+}
+

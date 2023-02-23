@@ -1,0 +1,55 @@
+.g5shop__swatch-color {
+  .g5shop__swatches-item {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.g5shop__swatch-image {
+  .g5shop__swatches-item {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.g5shop__swatch-text {
+  .g5shop__swatches-item {
+    &.g5shop__sw-selected,
+    &:hover {
+      color: var(--g5-color-heading);
+    }
+  }
+}
+
+.g5shop__reset_variations {
+  color: inherit;
+  font-weight: bold;
+  &:hover {
+    color: var(--g5-color-heading);
+  }
+}
+
+.g5shop__single-swatches {
+  .g5shop__swatch-text {
+    .g5shop__swatches-item {
+      line-height: 1;
+      padding: 9px 10px;
+      border: 1px solid var(--g5-color-border);
+      font-size: 16px;
+      min-width: 36px;
+      text-align: center;
+
+      &:hover {
+        color: var(--g5-color-heading);
+        border-color: currentColor;
+      }
+
+      &.g5shop__sw-selected {
+        color: #fff;
+        background-color: #000;
+        border-color: #000;
+      }
+
+    }
+  }
+}

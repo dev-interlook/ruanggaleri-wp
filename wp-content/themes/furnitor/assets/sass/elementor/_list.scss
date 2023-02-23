@@ -1,0 +1,19 @@
+.ube-list-icon.list-unstyled {
+	.list-icon-item {
+		&:not(:first-child) {
+			margin-top: 2px;
+		}
+
+		&:not(:last-child) {
+			padding-bottom: 2px;
+		}
+
+		a {
+			@include transition(all 0.3s);
+			border-bottom: solid 1px transparent;
+			&:hover {
+				border-color: currentColor;
+			}
+		}
+	}
+}

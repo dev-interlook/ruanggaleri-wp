@@ -1,0 +1,146 @@
+.woocommerce div.product form.cart {
+	margin-bottom: 23px;
+	table.variations {
+		margin-bottom: 25px;
+		tr,
+		td{
+			display: block;
+			line-height: 1;
+		}
+
+		tr + tr {
+			margin-top: 25px;
+		}
+
+		td,
+		th {
+			padding: 0;
+		}
+
+		tr:last-child {
+			td,
+			th {
+				padding: 0;
+			}
+		}
+
+		td.label {
+			padding: 0;
+			margin-bottom: 15px;
+			label {
+				margin: 0;
+				color: var(--g5-color-heading);
+			}
+		}
+
+		.reset_variations {
+			color: var(--g5-color-muted);
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			font-weight: bold;
+			display: block;
+			margin-top: 5px;
+			&:hover {
+				color: var(--g5-color-accent);
+			}
+		}
+
+		select {
+			background-color: transparent;
+			margin: 0;
+			width: 100%;
+		}
+
+	}
+
+	.woocommerce-variation-add-to-cart {
+		margin-top: 20px;
+		@extend %clearfix;
+	}
+
+
+	.woocommerce-variation-description {
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	table.group_table {
+		margin-bottom: 30px;
+		margin-top: 5px;
+		td {
+			padding: 0 0 20px 0;
+			vertical-align: middle;
+		}
+		tr:last-child {
+			td {
+				padding-bottom: 0;
+			}
+		}
+		td:first-child {
+			width: 130px;
+			text-align: left;
+		}
+
+		td.woocommerce-grouped-product-list-item__label {
+			label {
+				margin: 0;
+			}
+			a {
+				font-size: 16px;
+				font-weight: 700;
+				color: var(--g5-color-heading);
+				&:hover {
+					color: var(--g5-color-accent);
+				}
+			}
+		}
+
+		td.woocommerce-grouped-product-list-item__price {
+			ins {
+				background: transparent;
+				text-decoration: none;
+			}
+			.amount {
+				color: var(--g5-color-heading);
+				font-size: 16px;
+				font-weight: 400;
+			}
+			del {
+				margin-right: 5px;
+				.amount {
+					color: inherit;
+				}
+			}
+		}
+
+		.g5shop__quantity {
+			margin: 0;
+			padding: 0;
+			.stock-status,
+			label {
+				display: none;
+			}
+		}
+	}
+
+	&.grouped_form {
+		.single_add_to_cart_button {
+			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+
+	.stock {
+		font-size: 14px;
+		color: #2dad4b;
+	}
+
+	div.quantity {
+		margin: 0 20px 0 0;
+	}
+
+}

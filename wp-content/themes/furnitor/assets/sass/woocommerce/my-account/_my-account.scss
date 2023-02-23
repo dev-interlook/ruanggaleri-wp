@@ -1,0 +1,122 @@
+#customer_login {
+	h2 {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}
+
+.woocommerce-MyAccount-navigation {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			&:last-of-type {
+				border-bottom: none;
+			}
+			> a {
+				position: relative;
+				display: block;
+				padding: 14px 20px;
+				font-size: 16px;
+				font-weight: 600;
+				color: var(--g5-color-heading);
+				&:after {
+					font-family: var(--g5-font-icon);
+					font-size: 20px;
+					position: absolute;
+					right: 20px;
+
+					line-height: 1;
+					font-weight: 300;
+					text-transform: none;
+				}
+			}
+			&.is-active > a,
+			a:hover{
+				background-color: #f2f2f2;
+			}
+
+			&.woocommerce-MyAccount-navigation-link--dashboard {
+				> a:after {
+					content: "\f015";
+				}
+			}
+
+			&.woocommerce-MyAccount-navigation-link--orders {
+				> a:after {
+					content: "\f733";
+				}
+			}
+
+			&.woocommerce-MyAccount-navigation-link--downloads {
+				> a:after {
+					content: "\f019";
+				}
+			}
+
+			&.woocommerce-MyAccount-navigation-link--edit-address {
+				> a:after {
+					content: "\f3c5";
+				}
+			}
+
+			&.woocommerce-MyAccount-navigation-link--edit-account {
+				> a:after {
+					content: "\f406";
+				}
+			}
+
+			&.woocommerce-MyAccount-navigation-link--customer-logout {
+				> a:after {
+					content: "\f2f5";
+				}
+			}
+
+		}
+	}
+}
+
+.woocommerce-MyAccount-content {
+	> p:not(.woocommerce-info) {
+		padding: 20px;
+		background-color: #f2f2f2;
+		a {
+			color: inherit;
+		}
+	}
+
+
+	fieldset {
+		padding: 20px 40px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		border: 1px solid;
+		border-color: var(--g5-color-border);
+		legend {
+			width: auto;
+			padding: 0 15px;
+			font-weight: 600;
+			font-size: 16px;
+			color: var(--g5-color-heading);
+		}
+	}
+
+	h3 {
+		font-size: 24px;
+		margin-bottom: 35px;
+	}
+}
+
+.woocommerce table.my_account_orders {
+	font-size: 1em;
+	td {
+		padding: 15px;
+		text-align: center;
+	}
+
+	th {
+		text-align: center;
+	}
+}
+

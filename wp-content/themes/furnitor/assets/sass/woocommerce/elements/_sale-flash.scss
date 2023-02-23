@@ -1,0 +1,62 @@
+.woocommerce span.onsale {
+	min-width: 0;
+	min-height: 0;
+	height: 45px;
+	width: 45px;
+	padding: 0;
+	top: 10px;
+	left: 10px;
+	background-color: #e67a7a;
+	@include border-radius(50%);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	line-height: 1;
+	@include d-flex();
+	@include align-items-center();
+	@include justify-content-center();
+
+}
+
+.woocommerce ul.products li.product .onsale {
+	top: 10px;
+	left: 10px;
+	margin: 0;
+	right: auto;
+}
+
+
+
+
+/*------------*/
+.g5shop__product-flash {
+	height: 45px;
+	width: 45px;
+	padding: 0;
+	background-color: #e67a7a;
+	@include border-radius(50%);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	font-style: normal;
+	font-stretch: normal;
+	text-transform: uppercase;
+	@include d-flex();
+	@include align-items-center();
+	@include justify-content-center();
+	+ .g5shop__product-flash {
+		margin-top: 5px;
+	}
+
+}
+
+.on-featured{
+	background-color: #ead185;
+}
+
+.on-new {
+	background-color: #9bd6c1;
+}

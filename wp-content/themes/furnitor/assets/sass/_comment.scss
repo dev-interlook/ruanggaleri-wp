@@ -1,0 +1,307 @@
+.comments-area {
+	margin-top: 100px;
+	.comments-title,
+	.comment-reply-title {
+		font-size: 32px;
+		text-align: center;
+		margin-bottom: 55px;
+	}
+}
+
+.comment-form {
+	@extend %clearfix;
+
+	p {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: inherit;
+
+		&:hover {
+			color: var(--g5-color-accent);
+		}
+	}
+
+	textarea {
+		width: 100%;
+		display: block;
+		height: 125px;
+	}
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url {
+		input {
+			width: 100%;
+		}
+	}
+
+	.comment-form-email,
+	.comment-form-author {
+		float: left;
+		width: 50%;
+	}
+
+	.comment-form-author {
+		padding-right: 15px;
+	}
+
+	.comment-form-email {
+		padding-left: 15px;
+	}
+
+
+	.comment-form-cookies-consent {
+		color: var(--g5-color-heading);
+		input[type="checkbox"] {
+			position: relative;
+			top: 2px;
+		}
+
+		label {
+			display: inline;
+			margin: 0 0 0 5px;
+			font-size: 15px;
+		}
+	}
+
+	.form-submit {
+		text-align: center;
+	}
+
+	.mc4wp-checkbox-wp-comment-form {
+		input[type=checkbox] {
+			margin: 0 5px 0 0;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	@include media-xs() {
+		.comment-form-email,
+		.comment-form-author {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+}
+
+.comments-list-wrap {
+	margin-bottom: 85px;
+}
+
+.comment-list {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+
+	li.comment {
+		margin: 0 0 $margin_comment_element 0;
+	}
+
+	> li.comment:last-child {
+		margin-bottom: 0;
+	}
+
+	li.comment + li.comment {
+		padding-top: $margin_comment_element;
+		border-top: 1px solid;
+		border-color: var(--g5-color-border);
+	}
+
+
+	li:not(.pingback):not(.trackback) {
+		.comment-body {
+			position: relative;
+			padding-left: 100px;
+		}
+	}
+
+	li.pingback,
+	li.trackback {
+		margin-bottom: $margin_comment_element;
+
+		+ .comment {
+			margin-top: $margin_comment_element;
+		}
+
+		.comment-body {
+			a:not(.comment-edit-link) {
+				font-weight: bold;
+				letter-spacing: -0.05em;
+				display: block;
+				color: var(--g5-color-heading);
+				margin: 5px 0;
+			}
+
+		}
+
+	}
+
+	.comment-content {
+		margin-bottom: 7px;
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 2rem;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.comment-meta {
+		@include d-flex();
+		@include align-items-center();
+		margin-bottom: 7px;
+	}
+
+
+	.comment-author {
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			@include border-radius(50%);
+		}
+
+		.fn {
+			font-weight: 600;
+			color: var(--g5-color-heading);
+			font-size: 16px;
+
+			> a {
+				color: inherit;
+
+				&:hover {
+					color: var(--g5-color-accent);
+				}
+			}
+
+		}
+
+		.says {
+			display: none;
+		}
+	}
+
+	.comment-metadata {
+		font-size: 12px;
+		margin-left: 10px;
+		color: var(--g5-color-heading);
+		a {
+			color: inherit;
+			&:hover {
+				color: var(--g5-color-accent);
+			}
+		}
+	}
+
+	.edit-link,
+	.reply {
+		color: var(--g5-color-heading);
+		a {
+			position: relative;
+			display: inline-block;
+			line-height: 2;
+			color: inherit;
+			&:hover {
+				color: var(--g5-color-accent);
+			}
+
+			&:after {
+				display: block;
+				content: '';
+				position: absolute;
+				width: 100%;
+				@include transition(all 0.5s);
+				height: 1px;
+				bottom: 0;
+				background-color: var(--g5-color-heading);
+				opacity: 0.15;
+			}
+
+			&:hover {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.edit-link {
+		margin-left: 10px;
+	}
+
+
+	ul.children {
+		list-style: none;
+		padding-left: 0;
+		margin-left: 100px;
+		margin-top: $margin_comment_element;
+		padding-top: $margin_comment_element;
+		border-top: 1px solid;
+		border-color: var(--g5-color-border);
+	}
+
+	.comment-reply-title {
+		small {
+			a {
+				color: inherit;
+				font-size: 18px;
+				font-weight: 700;
+
+				&:hover {
+					color: var(--g5-color-accent);
+				}
+			}
+		}
+	}
+	.comment-respond {
+		margin-bottom: 85px;
+		margin-top: 85px;
+	}
+
+
+	@include media-lg {
+		ul.children {
+			margin-left: 35px;
+		}
+	}
+
+	@include media-xs {
+
+		ul.children {
+			margin-left: 25px;
+		}
+
+		.comment-author img {
+			width: 50px;
+		}
+
+		li:not(.pingback):not(.trackback) .comment-body {
+			padding-left: 70px;
+		}
+
+	}
+
+
+}
+
+
+.comments-pagination {
+	margin-top: 2.5rem;
+	text-align: center;
+}

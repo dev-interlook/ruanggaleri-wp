@@ -1,0 +1,60 @@
+.gel-icon-box {
+	@include transition(all .3s);
+	.title {
+		margin: 0;
+	}
+
+	.description {
+		margin-top: 7px;
+	}
+}
+
+.gel-icon-box-style-04 .icon,
+.gel-icon-box-style-05 .icon {
+	@include flex(0 0 3.5rem);
+}
+
+.custom-icon-box-01 {
+	&.gel-icon-box-style-01 .icon,
+	&.gel-icon-box-style-02 .icon,
+	&.gel-icon-box-style-03 .icon {
+		margin-bottom: 2.6rem;
+	}
+
+	.description {
+		margin-top: 14px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+}
+
+.custom-icon-box-02 {
+	.icon {
+		margin-bottom: 0;
+	}
+
+	.description {
+		margin-top: 3px;
+	}
+}
+
+.custom-icon-box-03{
+	padding: 30px;
+	background-color: #fff;
+	@include border-radius(5px);
+	@include box-shadow(0 5px 20px 5px rgb(0 0 0 / 5%));
+	&.gel-icon-box-style-01 .icon,
+	&.gel-icon-box-style-02 .icon,
+	&.gel-icon-box-style-03 .icon{
+		margin-bottom: 15px;
+	}
+	&:hover{
+		@include box-shadow(0px 10px 30px 10px rgb(0 0 0 / 10%));
+	}
+	.title {
+		font-size: 20px;
+	}
+}
+

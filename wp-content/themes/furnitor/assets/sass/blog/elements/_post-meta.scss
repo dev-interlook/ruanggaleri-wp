@@ -1,0 +1,29 @@
+ul.g5blog__post-meta {
+	font-size: 16px;
+	li >span,
+	i {
+		color: var(--g5-color-text-main);
+	}
+	li > a {
+		color: var(--g5-color-heading);
+		&:hover {
+			color: var(--g5-color-accent);
+		}
+	}
+
+	li {
+		margin-right: 10px;
+	}
+	li.meta-author {
+		margin-right: 5px;
+	}
+
+	li.meta-date > a {
+		color: inherit;
+		i {
+			display: none;
+		}
+	}
+
+}
+

@@ -1,0 +1,92 @@
+.woocommerce table.wishlist_table {
+	font-size: 100%;
+	.product-add-to-cart a {
+		display: inline-block !important;
+		margin-bottom: 0 !important;
+		padding: 0 2.5rem !important;
+		font-weight: 700;
+		border: solid 1px transparent;
+		white-space: nowrap;
+		text-transform: uppercase;
+		font-size: .75rem;
+		min-height: 2.8125rem;
+		line-height: 2.6875rem;
+		@include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+	}
+	.product-stock-status span.wishlist-in-stock {
+		color: var(--g5-color-heading);
+	}
+
+	tr td,
+	tr th.product-checkbox,
+	tr th.wishlist-delete {
+		text-align: left;
+	}
+}
+
+
+
+.yith-wcwl-share li a {
+	i.fa {
+		font: normal normal normal 14px/1 FontAwesome !important;
+	}
+}
+
+.yith_wcwl_wishlist_footer>div {
+	margin-top: 40px;
+}
+
+.yith-wcwl-share h4.yith-wcwl-share-title {
+	font-size: 21px;
+}
+
+.wishlist-title > h2 {
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+
+.woocommerce .hidden-title-form a.hide-title-form {
+	line-height: 2.5rem !important;
+}
+
+.wishlist_table.mobile {
+	padding: 0;
+	li {
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.item-wrapper {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.item-details {
+			h3 {
+				font-size: 16px;
+			}
+		}
+
+		.item-details table.item-details-table,
+		table.additional-info {
+			td {
+				font-size: 1em;
+			}
+
+			td.label {
+				font-weight: 500;
+			}
+			td.value {
+				color: var(--g5-color-heading);
+				font-weight: 500;
+			}
+		}
+
+		.product-add-to-cart a.button {
+			width: 100%;
+		}
+	}
+
+
+}

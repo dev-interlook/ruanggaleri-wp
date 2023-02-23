@@ -1,0 +1,24 @@
+.g5shop__search-product-cat {
+	select {
+		border-width: 0 0 2px 0;
+		padding-left: 0;
+	}
+	.select2-container--default.select2-container--default .select2-selection--single {
+		border-width: 0 0 2px 0;
+		.select2-selection__rendered{
+			padding-left: 0;
+			padding-right: 40px;
+		}
+	}
+}
+
+.g5shop__search-product {
+	.g5shop__search-product-input {
+		input[type=search] {
+			padding-left: 20px;
+		}
+	}
+}
+
+
+

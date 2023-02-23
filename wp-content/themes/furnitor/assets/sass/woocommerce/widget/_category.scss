@@ -1,0 +1,11 @@
+.widget_product_categories ul {
+	@include widget-archive();
+	a:hover + .count {
+		color: var(--g5-color-heading);
+	}
+	span.count {
+		position: absolute;
+		top: 2px;
+		right: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.furnitor-mailchimp {
+	position: relative;
+
+	input[type=email] {
+		width: 100%;
+		border-width: 0 0 2px 0;
+		padding-right: 0;
+		padding-left: 0;
+		background-color: transparent;
+		margin-top: 0;
+	}
+
+	button {
+		background: none;
+		color: #000;
+		border: none;
+		position: absolute;
+		right: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.furnitor-mailchimp-mw-570 {
+	max-width: 570px;
+	margin: 0 auto;
+}

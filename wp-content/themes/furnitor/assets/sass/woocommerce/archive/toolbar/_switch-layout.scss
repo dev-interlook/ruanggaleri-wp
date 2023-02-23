@@ -1,0 +1,16 @@
+.g5shop__switch-layout {
+  a {
+    color: var(--g5-color-muted);
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--g5-color-heading);
+    }
+
+    &:first-child {
+      margin-right: 5px;
+    }
+
+  }
+}

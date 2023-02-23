@@ -1,0 +1,64 @@
+.zoom-instagram-widget__follow-me {
+	text-align: left;
+	margin-top: 5px;
+
+	a {
+		border: none;
+		padding: 0;
+		color: var(--g5-color-heading) !important;
+		font-weight: 400 !important;
+		font-family: inherit;
+
+		&:hover {
+			border: none;
+			background-color: transparent;
+			color: var(--g5-color-heading) !important;
+		}
+	}
+}
+
+.zoom-instagram-icon-wrap {
+	@include d-flex();
+	@include justify-content-center();
+	@include align-items-center();
+
+	a {
+		@include transform(scale(1.3));
+		@include transition(transform .45s linear);
+	}
+}
+
+.zoom-instagram-widget__item {
+	overflow: hidden;
+
+	.zoom-instagram-link {
+		@include transition(transform .45s linear);
+	}
+}
+
+.zoom-instagram-widget__item:hover {
+	.zoom-instagram-icon-wrap a {
+		@include transform(scale(1));
+	}
+
+	.zoom-instagram-link {
+		transform: scale(1.2);
+	}
+}
+
+@media (min-width: 768px) {
+	.custom-instagram-space-md-30 {
+		.zoom-instagram-widget__items {
+			@include d-flex();
+			@include flex-flow-row();
+		}
+
+		.zoom-instagram-widget__item {
+			margin-bottom: 30px !important;
+
+			&:not(:last-child) {
+				margin-right: 30px !important;
+			}
+		}
+	}
+}

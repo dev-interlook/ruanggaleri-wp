@@ -1,0 +1,93 @@
+@media (min-width: 1200px) {
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-5,
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-3,
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-1 {
+    div.images {
+      width: 51.28%;
+    }
+    div.summary {
+      width: 48.72%;
+      padding-left: 70px;
+    }
+  }
+
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-4 {
+    div.images {
+      width: 66.4706%;
+    }
+    div.summary {
+      width: 33.5294%;
+      padding-left: 70px;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+.woocommerce div.product.g5shop__single-product {
+  div.images,
+  div.summary {
+    margin-bottom: 0;
+  }
+}
+
+.g5shop__single-product-summary {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .woocommerce div.product.g5shop__single-product {
+    div.images {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+@media (min-width: 769px) {
+  .woocommerce div.product.g5shop__product-gallery-desktop {
+    .woocommerce-product-gallery {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce div.product.g5shop__product-gallery-desktop {
+    .g5shop__woocommerce-product-gallery {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-5 {
+    div.images.g5shop__woocommerce-product-gallery {
+      width: calc(100vw / 2 - 1170px / 2 + 51.28%);
+      margin-left: calc(0px - (100vw / 2 - 1170px / 2));
+    }
+    .g5shop__loop-product-flash {
+      margin-left: calc(0px - (100vw / 2 - 1170px / 2));
+    }
+  }
+
+  body.no-sidebar.woocommerce.g5core__stretched_content div.product.g5shop__single-product-layout-5 {
+    div.images.g5shop__woocommerce-product-gallery {
+      width: calc(100vw / 2 - (95vw - 30px) / 2 + 51.28%);
+      margin-left: calc(0px - (100vw / 2 - (95vw - 30px) / 2));
+    }
+    .g5shop__loop-product-flash {
+      margin-left: calc(0px - (100vw / 2 - (95vw - 30px) / 2));
+    }
+  }
+
+
+
+}

@@ -1,0 +1,64 @@
+.woocommerce .col2-set {
+	.col-1,
+	.col-2 {
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.woocommerce form {
+	p {
+		margin-bottom: 25px;
+	}
+	.form-row {
+		display: block;
+		padding: 0;
+		margin: 0 0 25px 0;
+		label {
+			margin-bottom: 5px;
+			color: var(--g5-color-heading);
+			font-weight: 500;
+		}
+		textarea {
+			height: 8em;
+		}
+
+	}
+}
+
+.woocommerce-shipping-fields {
+	margin-top: 30px;
+	> h3 {
+		font-size: 16px;
+		margin-bottom: 15px;
+		font-weight: 500;
+		label {
+			margin: 0;
+			input {
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+}
+
+.woocommerce-billing-fields,
+.woocommerce-additional-fields{
+	> h3 {
+		font-size: 24px;
+		margin-bottom: 35px;
+	}
+}
+
+.woocommerce-additional-fields {
+	margin-top: 30px;
+}
+
+.woocommerce-account-fields {
+	label > span {
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--g5-color-heading);
+	}
+}

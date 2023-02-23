@@ -1,0 +1,52 @@
+.gel-heading-title {
+	font-size: 60px;
+	line-height: 1.3;
+	margin-bottom: 0;
+
+	mark {
+		font-size: 38px;
+		font-weight: 500;
+		padding: 0;
+		color: var(--g5-color-heading);
+	}
+}
+
+.gel-heading-description {
+	margin-bottom: 0;
+	margin-top: 18px;
+}
+
+.gel-heading-subtitle {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--g5-color-heading);
+	font-weight: bold;
+}
+
+.gel-heading-separate {
+	margin-top: 1em;
+	color: var(--g5-color-heading);
+}
+
+@media (max-width: 991px) {
+	.custom-md-heading-mw-100 {
+		&.gel-heading {
+			max-width: 100%;
+		}
+	}
+}
+
+.custom-heading-01 .gel-heading-description {
+	margin-top: 11px;
+}
+
+.custom-heading-02 {
+	mark {
+		font-weight: bold;
+		font-size: 48px;
+	}
+}
+
+.custom-heading-03 .gel-heading-description {
+	margin-top: 25px;
+}

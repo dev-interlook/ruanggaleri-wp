@@ -1,0 +1,144 @@
+ul.page-numbers {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	li {
+		margin: 0;
+		display: inline-block;
+	}
+}
+
+.page-numbers:not(ul) {
+	font-size: 18px;
+	color: #a2a2a2;
+	font-weight: 500;
+	display: inline-block;
+	margin: 0 15px;
+	@include transition(all .5s);
+	&.current,
+	&:hover {
+		color: var(--g5-color-accent);
+	}
+
+	&.prev,
+	&.next {
+		font-size: 0;
+		&:before {
+			font-family: var(--g5-font-icon);
+			font-size: 12px;
+			display: inline-block;
+			content: '\f100';
+
+		}
+	}
+
+	&.next {
+		&:before {
+			content: '\f101';
+		}
+	}
+}
+
+.post-navigation {
+	margin-top: 30px;
+	padding-top: 50px;
+	border-top: 1px solid;
+	border-color: var(--g5-color-border);
+	.nav-links {
+		@include d-flex;
+		a {
+			@include d-flex;
+			@include align-items-center();
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.nav-subtitle {
+			color: var(--g5-color-muted);
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			font-weight: 500;
+		}
+		.nav-title {
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: var(--g5-color-accent);
+			font-size: 16px;
+			font-weight: 700;
+			margin-top: 3px;
+		}
+
+		> div {
+			width: 47.5%;
+		}
+
+		.nav-content {
+			@include flex-fill();
+		}
+		i {
+			font-size: 14px;
+			color: var(--g5-color-heading);
+		}
+	}
+
+	.nav-previous {
+		margin-right: auto;
+		i {
+			margin-right: 15px;
+		}
+	}
+
+	.nav-next {
+		margin-left: auto;
+		text-align: right;
+		i {
+			margin-left: 15px;
+		}
+	}
+
+	@include media-sm() {
+		.nav-links .nav-title {
+			display: none;
+		}
+	}
+
+}
+
+
+
+.page-links {
+	float: left;
+	width: 100%;
+	.page-links-title {
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 0 15px 0 0;
+	}
+
+	> .post-page-numbers {
+		display: inline-block;
+		margin-right: 0.25rem;
+		border: solid 1px;
+		border-color: var(--g5-color-border);
+		font-weight: 500;
+		color: inherit;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		@include transition(all .3s);
+		&:hover,
+		&.current {
+			background-color: var(--g5-color-accent);
+			border-color: var(--g5-color-accent);
+			color: var(--g5-color-accent-foreground);
+		}
+	}
+}
+

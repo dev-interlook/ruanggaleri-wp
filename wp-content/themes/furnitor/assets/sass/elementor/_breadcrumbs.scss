@@ -1,0 +1,29 @@
+.ube-breadcrumbs {
+	font-size: 15px;
+	color: #959595;
+
+	a {
+		@include transition(color .3s);
+	}
+
+	a:hover, .active {
+		color: var(--g5-color-accent);
+	}
+
+	.breadcrumb-item:nth-child(1) a:before {
+		content: "\f015";
+		font-family: var(--g5-font-icon);
+		font-weight: 700;
+		margin-right: 9px;
+		color: var(--g5-color-accent);
+	}
+
+	.breadcrumb-item + .breadcrumb-item {
+		padding-left: 15px;
+
+		&:before {
+			padding-right: 15px;
+			font-size: inherit;
+		}
+	}
+}

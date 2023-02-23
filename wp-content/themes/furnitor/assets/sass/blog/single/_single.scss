@@ -1,0 +1,21 @@
+@import "layout/layout";
+@import "block-title";
+@import "related";
+@import "meta";
+.g5blog__single-meta-bottom {
+	padding-top: 0;
+	margin-top: 40px;
+}
+
+.g5blog__single-title {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.g5blog__single {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	.entry-content {
+		margin-bottom: 0;
+	}
+}

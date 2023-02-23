@@ -1,0 +1,52 @@
+.ube-marker-wrapper {
+	.tooltip-inner {
+		padding: 16px 14px 21px 16px;
+		background-color: #fff;
+
+		h4, p {
+			font-size: 15px;
+			color: var(--g5-color-heading);
+		}
+
+		h4 {
+			margin-bottom: 4px;
+		}
+	}
+
+	.bs-tooltip-top .arrow::before {
+		border-top-color: #fff;
+	}
+
+	.bs-tooltip-bottom .arrow::before {
+		border-bottom-color: #fff;
+	}
+
+	.tooltip {
+		width: 175px;
+	}
+
+	.ube-image-pointer {
+		width: 25px;
+		height: 25px;
+		@include border-radius(50%);
+		background-color: var(--g5-color-heading);
+
+		.ube-pointer-icon {
+			color: #fff;
+			font-size: 10px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.custom-el-image-marker .ube-marker-wrapper,
+	.custom-vc-image-marker {
+		height: 600px;
+
+		> img {
+			-o-object-fit: cover;
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+}

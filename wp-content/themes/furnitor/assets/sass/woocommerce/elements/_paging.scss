@@ -1,0 +1,32 @@
+.woocommerce .woocommerce-pagination ul.page-numbers,
+.woocommerce-page .woocommerce-pagination ul.page-numbers{
+	border: none;
+	margin: 0;
+	li {
+		border: none;
+		float: none;
+		@include d-inline-flex();
+		@include align-items-center();
+		span,
+		a {
+			font-size: 18px;
+			color: #a2a2a2;
+			font-weight: 500;
+			padding: 0;
+			margin: 0 15px;
+			min-width: auto;
+			@include transition(all .5s);
+
+			&.current,
+			&:hover {
+				color: var(--g5-color-accent);
+				background: transparent;
+			}
+		}
+
+		.prev,
+		.next {
+			font-size: 0;
+		}
+	}
+}

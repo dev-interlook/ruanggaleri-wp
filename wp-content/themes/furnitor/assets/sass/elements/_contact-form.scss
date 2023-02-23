@@ -1,0 +1,33 @@
+.furnitor-contact-form {
+	input:not(input[type=checkbox]):not(input[type=submit]), textarea {
+		width: 100%;
+	}
+
+	textarea {
+		height: 150px;
+	}
+
+	.item-contact:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.wpcf7-not-valid-tip {
+		display: none;
+	}
+
+	.wpcf7-not-valid {
+		border-color: #dc3545 !important;
+	}
+
+	& + div.wpcf7-response-output {
+		text-align: center;
+		color: #fff;
+		background: #dc3545;
+		border: none;
+		@include border-radius(4px);
+		padding: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}

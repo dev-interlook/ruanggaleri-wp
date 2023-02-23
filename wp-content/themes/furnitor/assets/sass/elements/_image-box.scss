@@ -1,0 +1,81 @@
+.gel-image-box {
+	.title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+}
+
+.gel-image-box-style-04,
+.gel-image-box-style-05 {
+	@include align-items-center();
+}
+
+.custom-image-box-01 {
+	max-width: 280px;
+	margin: 0 auto;
+
+	.title {
+		font-size: 24px;
+		margin-bottom: 7px;
+	}
+
+	&.gel-image-box-style-04 .image {
+		margin-right: 22px;
+	}
+
+	&.gel-image-box-style-05 .image {
+		margin-left: 22px;
+	}
+
+}
+
+.slick-slide .gel-image-box img {
+	display: inline;
+}
+
+.custom-border-image {
+	.slick-slide {
+		position: relative;
+
+		&:not(:last-child) {
+			.custom-image-box-01:before {
+				content: '';
+				position: absolute;
+				height: 70px;
+				width: 1px;
+				background-color: #eee;
+				right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.custom-image-box-02 {
+		.title {
+			margin-bottom: 22px;
+		}
+	}
+}
+
+.custom-image-box-03 {
+	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);
+	padding: 13px;
+	min-height: 100px;
+	@include align-items-center();
+	@include transition(all .45s linear);
+	margin: 15px 10px;
+
+	.gel-image-box-style-04 .image {
+		margin-right: 12px;
+	}
+
+	.title {
+		margin-bottom: 0;
+		font-weight: 500;
+	}
+
+	&:hover {
+		@include transform(translateY(-8px));
+	}
+}

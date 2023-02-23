@@ -1,0 +1,74 @@
+.ube-banner-title {
+	font-size: 40px;
+	line-height: 1.3;
+	color: var(--g5-color-heading);
+}
+
+.ube-banner-description {
+	color: var(--g5-color-text-main);
+}
+
+.ube-banner:after {
+	background-color: transparent;
+}
+
+@media (max-width: 1500px) and (min-width: 1025px) {
+	.custom-ube-banner-01, .custom-ube-banner-02 {
+		.ube-banner-title {
+			font-size: 45px !important;
+			line-height: 1.2;
+		}
+	}
+}
+
+@media (max-width: 1366px) and (min-width: 1025px) {
+	.custom-ube-banner-02 {
+		.ube-banner-title {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media (min-width: 1367px) {
+	.ube-banner .ube-banner-content {
+		padding: 55px 63px 47px;
+	}
+	.ube-banner-title {
+		margin-bottom: 36px;
+	}
+	.custom-ube-banner-01 {
+		.ube-banner-title {
+			margin-bottom: 6rem;
+		}
+
+		.ube-banner-description + .ube-banner-btn {
+			margin-top: 6rem;
+		}
+	}
+	.custom-ube-banner-02 {
+		.ube-banner-title {
+			margin-bottom: 77px;
+		}
+	}
+	.custom-ube-banner-03 {
+		.ube-banner-description + .ube-banner-btn {
+			margin-top: 6.4rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.sm-banner-70 {
+		.ube-banner-bg {
+			padding-bottom: 70% !important;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.xs-banner-100 {
+		.ube-banner-bg {
+			padding-bottom: 100% !important;
+		}
+	}
+}

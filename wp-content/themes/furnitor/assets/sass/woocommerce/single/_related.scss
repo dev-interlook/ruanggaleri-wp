@@ -1,0 +1,33 @@
+.woocommerce .products.related,
+.woocommerce .products.upsells {
+  margin-top: 100px;
+  > h2 {
+    font-size: 32px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  .slick-dots {
+    margin-top: 25px;
+  }
+}
+
+
+
+@media (min-width: 1750px) {
+  body.no-sidebar.woocommerce:not(.g5core__stretched_content) {
+    .products.related,
+    .products.upsells {
+      width: 1720px;
+      margin-left: -275px;
+    }
+  }
+}
+
+body.no-sidebar.woocommerce.g5core__stretched_content {
+  .g5shop__single-product-tabs
+  {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

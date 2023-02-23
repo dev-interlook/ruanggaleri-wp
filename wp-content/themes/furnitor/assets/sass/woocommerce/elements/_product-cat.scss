@@ -1,0 +1,10 @@
+.g5shop__loop-product-cat {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: var(--g5-color-muted);
+  &:hover {
+    color: var(--g5-color-accent);
+  }
+}

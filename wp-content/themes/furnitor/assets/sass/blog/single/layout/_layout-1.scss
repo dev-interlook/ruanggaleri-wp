@@ -1,0 +1,29 @@
+.g5blog__single-layout-1 {
+  .g5blog__single-meta-top {
+    margin-bottom: 40px;
+  }
+
+  .g5blog__single-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .g5blog__single-featured {
+    margin-bottom: 44px;
+  }
+
+  .g5blog__single-breadcrumbs + .g5blog__single-meta-top {
+    margin-top: 70px;
+  }
+
+}
+
+.no-sidebar.g5blog__single-layout-1 {
+  .g5blog__single-meta-top {
+    margin-bottom: 70px;
+    text-align: center;
+    ul.g5blog__post-meta {
+      @include justify-content-center();
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+	.cate-filer-left-mw-767 .g5core__cate-filer{
+		@include justify-content-start();
+	}
+}

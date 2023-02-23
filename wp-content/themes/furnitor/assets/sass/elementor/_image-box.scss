@@ -1,0 +1,31 @@
+.ube-image-box {
+	.ube-heading-title {
+		font-size: 20px;
+	}
+}
+
+.ube-image-box-description {
+	margin-top: 14px;
+}
+
+.ube-image-box-01 .ube-image-box-inner {
+	margin-bottom: 30px;
+}
+
+.custom-ube-image-box-01 .ube-image-box {
+	box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);
+	padding: 13px;
+	min-height: 100px;
+	@include align-items-center();
+	@include transition(all .45s linear);
+
+	&:hover {
+		@include transform(translateY(-8px));
+	}
+}
+
+@media (min-width: 577px) {
+	.custom-ube-image-box-01 .ube-image-box {
+		margin: 10px 5px;
+	}
+}

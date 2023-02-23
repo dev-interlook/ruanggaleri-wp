@@ -1,0 +1,68 @@
+//.woocommerce a.added_to_cart,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+	position: relative;
+	display: inline-block;
+	@include button-size($height__input, 30px, 14px);
+	font-weight: 700;
+	border: solid 1px transparent;
+	white-space: nowrap;
+	text-transform: uppercase;
+	@include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+	@include border-radius(0);
+	@include transition(color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+
+
+	&.loading {
+		@include button-size($height__input, 30px, 14px);
+		&:after {
+			top: 0;
+		}
+	}
+
+	&.disabled,
+	&:disabled,
+	&:disabled[disabled] {
+		@include button-size($height__input, 30px, 14px);
+		@include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+	}
+
+	&.alt {
+		@include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+		&.disabled {
+			@include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent,$color_accent,transparent,$color_accent);
+		}
+	}
+
+}
+
+
+
+.woocommerce a.remove {
+	font-size: 0 !important;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	&:before {
+		font-family: var(--g5-font-icon);
+		font-weight: 300;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		content: '\f00d';
+		font-size: 16px;
+		color: var(--g5-color-muted);
+	}
+	&:hover {
+		background-color: transparent;
+		&:before {
+			color: var(--g5-color-accent);
+		}
+	}
+}

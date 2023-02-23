@@ -1,0 +1,29 @@
+.woocommerce table.shop_attributes {
+	border: none;
+	th,
+	td {
+		border: none;
+		border-bottom: 1px solid var(--g5-color-border);
+		padding: 8px 0;
+		color: var(--g5-color-heading);
+	}
+
+	th {
+		font-weight: 400;
+	}
+
+	td {
+		font-style: normal;
+		text-align: right;
+		p {
+			padding: 0;
+		}
+	}
+
+	tr:nth-child(even) {
+		th,
+		td {
+			background-color: transparent;
+		}
+	}
+}

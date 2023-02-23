@@ -1,0 +1,35 @@
+.g5shop__mini-cart {
+  ul.woocommerce-mini-cart {
+    li {
+      a:not(.remove) {
+        color: #000;
+        font-weight: 700;
+      }
+      .quantity {
+        font-size: 16px;
+        color: #000;
+      }
+      .woocommerce-Price-amount {
+        color: inherit;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .woocommerce-mini-cart__total {
+    color: #000;
+    .amount {
+      font-weight: 400;
+      color: inherit;
+    }
+  }
+}
+
+.g5shop_header-action-icon {
+  a {
+
+    > span {
+      background-color: var(--g5-color-accent);
+    }
+  }
+}

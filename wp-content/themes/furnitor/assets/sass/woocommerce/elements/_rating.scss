@@ -1,0 +1,21 @@
+.woocommerce .star-rating{
+  font-size: 12px !important;
+  width: 72px;
+  margin: 0;
+  float: none;
+  &:before {
+    letter-spacing: 0.2em;
+    color: #000;
+  }
+  span {
+    color: #000;
+    &:before {
+      letter-spacing: 0.2em;
+    }
+  }
+}
+
+.woocommerce p.stars a {
+  color: #000;
+}
+
